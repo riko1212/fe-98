@@ -4,58 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chocolate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href=""
-          >SIMPLY CHOCOLATE <img src="./images/logo.svg" alt="site logo"
+    <header class="header">
+      <nav class="header-navigation">
+        <a class="header-logo link" href=""
+          ><span class="header-logo-italic">SIMPLY</span> CHOCOLATE
+          <img src="./images/logo.svg" alt="site logo"
         /></a>
-        <ul>
-          <li>
-            <a href="">Home</a>
+        <ul class="header-menu list">
+          <li class="header-menu-item">
+            <a class="header-menu-link link" href="">Home</a>
           </li>
-          <li>
-            <a href="#made">How it’s made?</a>
+          <li class="header-menu-item">
+            <a class="header-menu-link link" href="#made">How it’s made?</a>
           </li>
-          <li>
-            <a href="#loved">Chocolate is loved</a>
+          <li class="header-menu-item">
+            <a class="header-menu-link link" href="#loved"
+              >Chocolate is loved</a
+            >
           </li>
         </ul>
       </nav>
-      <ul>
-        <li>
-          <a href="" target="_blank" rel="noopener noreferrer">Insta</a>
+      <ul class="header-soc list">
+        <li class="header-soc-item">
+          <a
+            class="header-soc-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            >Insta</a
+          >
         </li>
-        <li><a href="" target="_blank" rel="noopener noreferrer">Fb</a></li>
-        <li><a href="" target="_blank" rel="noopener noreferrer">Twit</a></li>
+        <li class="header-soc-item">
+          <a
+            class="header-soc-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            >Fb</a
+          >
+        </li>
+        <li class="header-soc-item">
+          <a
+            class="header-soc-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            >Twit</a
+          >
+        </li>
       </ul>
     </header>
     <main>
-      <section>
-        <h1>
+      <section class="hero">
+        <h1 class="hero-title">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <button type="button">Buy now</button>
-        <a href="#made">How it’s made</a>
-        <a href="#footer">scroll down</a>
+        <button class="hero-bye-btn" type="button">Buy now</button>
+        <a href="#made" class="hero-anchor-btn">How it’s made</a>
+        <a href="#footer" class="hero-bottom-btn">scroll down</a>
       </section>
-      <section>
-        <h2 hidden>Features</h2>
-        <ul>
-          <li>
-            <h3>Unsurpassed taste</h3>
-            <p>
+      <section class="features">
+        <h2 class="visually-hidden">Features</h2>
+        <ul class="features-list">
+          <li class="features-item">
+            <h3 class="features-subtitle">Unsurpassed taste</h3>
+            <p class="features-item-text">
               Crafted with the finest quality cocoa beans and a dedication to
               perfection, each bite is a decadent experience that simply cannot
               be matched. Savor the richness and complexity of our Unsurpassed
               Taste and discover a new level of chocolate bliss.
             </p>
           </li>
-          <li>
-            <h3>Affordable price</h3>
-            <p>
+          <li class="features-item">
+            <h3 class="features-subtitle">Affordable price</h3>
+            <p class="features-item-text">
               Indulge in high-quality chocolate without breaking the bank with
               Simply Chocolate's selection of affordable treats. Enjoy
               mouth-watering truffles and velvety chocolate bars without
@@ -63,9 +102,9 @@
               affordable luxury today.
             </p>
           </li>
-          <li>
-            <h3>Own production</h3>
-            <p>
+          <li class="features-item">
+            <h3 class="features-subtitle">Own production</h3>
+            <p class="features-item-text">
               We take pride in our own production process, ensuring that every
               step is carefully crafted to perfection. From selecting the finest
               ingredients to handcrafting each piece, our attention to detail is
