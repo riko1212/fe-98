@@ -24,9 +24,8 @@
       <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logo link" href=""
-            ><span class="header-logo-italic">SIMPLY</span>CHOCOLATE
-            <img src="./images/logo.svg" alt="site logo"
-          /></a>
+            ><span class="header-logo-italic">SIMPLY</span>CHOCOLATE</a
+          >
           <ul class="header-menu list">
             <li class="header-menu-item">
               <a class="header-menu-link link" href="">Home</a>
@@ -48,8 +47,11 @@
               href=""
               target="_blank"
               rel="noopener noreferrer"
-              >Insta</a
             >
+              <svg class="header-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
           </li>
           <li class="header-soc-item">
             <a
@@ -57,8 +59,9 @@
               href=""
               target="_blank"
               rel="noopener noreferrer"
-              >Fb</a
-            >
+              ><svg class="header-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use></svg
+            ></a>
           </li>
           <li class="header-soc-item">
             <a
@@ -66,8 +69,9 @@
               href=""
               target="_blank"
               rel="noopener noreferrer"
-              >Twit</a
-            >
+              ><svg class="header-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use></svg
+            ></a>
           </li>
         </ul>
       </div>
@@ -91,6 +95,11 @@
           <h2 class="visually-hidden">Features</h2>
           <ul class="features-list list">
             <li class="features-item">
+              <div class="features-icon-wrap">
+                <svg class="header-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-spoon"></use>
+                </svg>
+              </div>
               <h3 class="features-subtitle">Unsurpassed taste</h3>
               <p class="features-item-text">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -100,6 +109,8 @@
               </p>
             </li>
             <li class="features-item">
+              <div class="features-icon-wrap"></div>
+
               <h3 class="features-subtitle">Affordable price</h3>
               <p class="features-item-text">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -110,6 +121,7 @@
               </p>
             </li>
             <li class="features-item">
+              <div class="features-icon-wrap"></div>
               <h3 class="features-subtitle">Own production</h3>
               <p class="features-item-text">
                 We take pride in our own production process, ensuring that every
@@ -361,13 +373,24 @@
           <h2 class="sellers-title section-title"><span>Top</span> sellers</h2>
           <ul class="sellers-list list">
             <li class="sellers-item">
-              <img
-                src="./images/sellers-img-1.jpeg"
-                alt="CHOCOLATE WITH NUTS"
-                width="368"
-                height="464"
-                class="sellers-img"
-              />
+              <div class="sellers-cover-wrap">
+                <img
+                  src="./images/sellers-img-1.jpeg"
+                  alt="CHOCOLATE WITH NUTS"
+                  width="368"
+                  height="464"
+                  class="sellers-img"
+                />
+                <div class="sellers-text-wrap">
+                  <p class="sellers-cover-text">
+                    Chocolate with fruit is an unbeatable combination of two of
+                    the tastiest things in the world. This dessert combines
+                    delicate and aromatic chocolate with fresh and juicy fruits,
+                    creating a true poetry of taste.
+                  </p>
+                </div>
+              </div>
+
               <h3 class="sellers-subtitle">CHOCOLATE WITH NUTS</h3>
             </li>
             <li class="sellers-item">
