@@ -547,5 +547,69 @@
         </nav>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="modal-btn">
+          <svg class="modal-btn-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-x-close"></use>
+          </svg>
+        </button>
+        <p class="modal-title section-title">
+          LEAVE A REVIEW ABOUT
+          <span>OUR CHOCOLATE</span>
+        </p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="modal-label">Name</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                required
+                minlength="2"
+                id="user-name"
+              />
+              <svg class="modal-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="modal-label">Email</label>
+            <input
+              type="email"
+              name="user-email"
+              class="modal-input"
+              placeholder="Enter email"
+              id="user-email"
+            />
+          </div>
+          <div class="modal-field">
+            <label for="user-phone" class="modal-label">Phone number</label>
+            <input
+              type="tel"
+              name="user-phone"
+              class="modal-input"
+              placeholder="Enter phone number"
+              required
+              maxlength="15"
+              value="+380"
+              id="user-phone"
+            />
+          </div>
+          <div class="modal-field">
+            <label for="user-text" class="modal-label">Comment</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              class="modal-textarea"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+          <button type="submit" class="modal-form-btn">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

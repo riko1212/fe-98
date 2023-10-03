@@ -712,3 +712,150 @@ img {
 }
 
 /** ============================== */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.657);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 300ms linear, visibility 300ms linear;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal {
+  width: 517px;
+  min-height: 794px;
+  border-radius: 15px;
+  background-color: #fafafa;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+}
+
+.modal-btn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+}
+
+.modal-btn-icon {
+  fill: transparent;
+  stroke: #111111;
+}
+
+.modal-title {
+  text-align: left;
+  max-width: 300px;
+  margin-bottom: 40px;
+}
+
+.modal-field {
+  margin-bottom: 18px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 68px;
+  border-radius: 13px;
+  border: 1px solid rgba(17, 17, 17, 0.25);
+  background-color: transparent;
+  padding-left: 62px;
+  padding-right: 24px;
+  color: teal;
+  font-size: 16px;
+  outline: transparent;
+  transition: border-color 300ms linear;
+}
+
+.input-wrap:focus-within .modal-input {
+  border-color: #fd9222;
+}
+
+.input-wrap:focus-within .modal-icon {
+  stroke: #fd9222;
+}
+
+/* .modal-input:focus {
+  border-color: #fd9222;
+}
+
+.modal-input:focus + .modal-icon {
+  stroke: #fd9222;
+} */
+
+.modal-input::placeholder {
+  color: #6a5c75;
+  font-size: 12px;
+}
+
+.modal-form-btn {
+  padding: 14px 40px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 100px;
+  background-color: #fd9222;
+  border: none;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.modal-label {
+  display: block;
+  color: rgba(64, 64, 64, 0.3);
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.modal-icon {
+  position: absolute;
+  fill: transparent;
+  stroke: #404040;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: stroke 300ms linear;
+}
+
+.modal-textarea {
+  width: 100%;
+  height: 137px;
+  border-radius: 13px;
+  border: 1px solid rgba(17, 17, 17, 0.25);
+  background-color: transparent;
+  padding: 22px 24px;
+  color: teal;
+  font-size: 16px;
+  outline: transparent;
+  transition: border-color 300ms linear;
+  resize: none;
+}
+
+.modal-textarea::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: -0.02em;
+}
