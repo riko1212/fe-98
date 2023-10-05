@@ -47,6 +47,7 @@
               href=""
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="instagram"
             >
               <svg class="header-soc-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-instagram"></use>
@@ -423,13 +424,13 @@
           </h2>
           <ul class="loved-list list">
             <li class="loved-item">
-              <!-- <img
+              <img
                 src="./images/loved-img-1.jpeg"
                 alt="Victoria Dobrzhanska"
                 width="80"
                 height="80"
                 class="loved-img"
-              /> -->
+              />
               <h3 class="loved-subtitle">Victoria Dobrzhanska</h3>
               <p class="loved-item-text">
                 I love this chocolate bar. Perfect combination of light crispy
@@ -437,13 +438,13 @@
               </p>
             </li>
             <li class="loved-item">
-              <!-- <img
+              <img
                 src="./images/loved-img-2.jpeg"
                 alt="Nazar Babenko"
                 width="80"
                 height="80"
                 class="loved-img"
-              /> -->
+              />
               <h3 class="loved-subtitle">Nazar Babenko</h3>
               <p class="loved-item-text">
                 This chocolate confection is a delight! A delight! The wafer is
@@ -452,13 +453,13 @@
               </p>
             </li>
             <li class="loved-item">
-              <!-- <img
+              <img
                 src="./images/loved-img-3.jpeg"
                 alt="Olena Kampusch"
                 width="80"
                 height="80"
                 class="loved-img"
-              /> -->
+              />
               <h3 class="loved-subtitle">Olena Kampusch</h3>
               <p class="loved-item-text">
                 Chocolate is a family favourite treat. Love the delicious smooth
@@ -478,76 +479,92 @@
             <span>Chocolate</span> a delicious cure for a bad day
           </p>
           <!-- Social networks -->
-          <p class="footer-subtitle">Social networks</p>
-          <ul class="footer-soc-list list">
-            <li class="footer-soc-item">
-              <a
-                class="footer-soc-link link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                >insta</a
-              >
-            </li>
-            <li class="footer-soc-item">
-              <a
-                class="footer-soc-link link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                >FB</a
-              >
-            </li>
-            <li class="footer-soc-item">
-              <a
-                class="footer-soc-link link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                >Twit</a
-              >
-            </li>
-          </ul>
-          <!-- ---- -->
-          <!-- Contact us -->
-          <p class="footer-subtitle">Contact us</p>
-          <address class="footer-address">
-            <ul class="footer-address-list list">
-              <li class="footer-address-item">
-                <a class="footer-address-link link" href="tel:+380684439426"
-                  >+380 (68) 443-94-26</a
+          <div>
+            <p class="footer-subtitle">Social networks</p>
+            <ul class="footer-soc-list list">
+              <li class="footer-soc-item">
+                <a
+                  class="footer-soc-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >insta</a
                 >
               </li>
-              <li class="footer-address-item">
+              <li class="footer-soc-item">
                 <a
-                  class="footer-address-link link"
-                  href="mailto:simplychoc@gmail.com"
-                  >simplychoc@gmail.com</a
+                  class="footer-soc-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >FB</a
+                >
+              </li>
+              <li class="footer-soc-item">
+                <a
+                  class="footer-soc-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Twit</a
                 >
               </li>
             </ul>
-          </address>
+          </div>
+          <!-- ---- -->
+          <!-- Contact us -->
+          <div>
+            <p class="footer-subtitle">Contact us</p>
+            <address class="footer-address">
+              <ul class="footer-address-list list">
+                <li class="footer-address-item">
+                  <a class="footer-address-link link" href="tel:+380684439426"
+                    >+380 (68) 443-94-26</a
+                  >
+                </li>
+                <li class="footer-address-item">
+                  <a
+                    class="footer-address-link link"
+                    href="mailto:simplychoc@gmail.com"
+                    >simplychoc@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
         </div>
         <!-- ---- -->
-
-        <nav class="footer-navigation">
-          <ul class="footer-menu-list list">
-            <li class="footer-menu-item">
-              <a class="footer-menu-link link" href="#">Home</a>
-            </li>
-            <li class="footer-menu-item">
-              <a class="footer-menu-link link" href="#made">How it’s made?</a>
-            </li>
-            <li class="footer-menu-item">
-              <a class="footer-menu-link link" href="#loved"
-                >Chocolate is loved</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <div class="footer-bottom">
+          <nav class="footer-navigation">
+            <ul class="footer-menu-list list">
+              <li class="footer-menu-item">
+                <a class="footer-menu-link link" href="#">Home</a>
+              </li>
+              <li class="footer-menu-item">
+                <a class="footer-menu-link link" href="#made">How it’s made?</a>
+              </li>
+              <li class="footer-menu-item">
+                <a class="footer-menu-link link" href="#loved"
+                  >Chocolate is loved</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <form class="footer-form">
+            <label aria-label="footer input">
+              <input
+                type="email"
+                name="footer-email"
+                placeholder="Enter your email"
+                class="footer-form-input"
+              />
+            </label>
+            <button type="submit" class="footer-form-btn">Subscribe</button>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-btn">
           <svg class="modal-btn-icon" width="28" height="28">
@@ -607,9 +624,30 @@
               placeholder="Enter text"
             ></textarea>
           </div>
+          <div class="modal-field">
+            <input
+              class="modal-check visually-hidden"
+              type="checkbox"
+              name="terms"
+              id="terms"
+              required
+            />
+            <label class="check-text" for="terms">
+              <span class="check-text-box">
+                <svg class="check-text-icon" width="10" height="10">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="">Privacy Policy</a></label
+            >
+          </div>
           <button type="submit" class="modal-form-btn">Send</button>
         </form>
       </div>
     </div>
   </body>
 </html>
+
+user-name=cascasc &user-email= &user-phone=%2B380+%2896%29+111-1& user-text=&
+answer=on
