@@ -41,6 +41,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -70,15 +72,14 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
 
 .section-title {
   color: #111;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 1.17;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
 }
@@ -295,18 +296,20 @@ img {
 
 .features {
   background-color: #1e1823;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .features-list {
-  padding-left: 18px;
-  padding-right: 18px;
+  /* padding-left: 18px;
+  padding-right: 18px; */
   display: flex;
-  gap: 88px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .features-item {
-  width: calc((100% - 88px * 2) / 3);
+  width: 100%;
   position: relative;
+  padding-right: 28px;
 }
 
 .features-icon-wrap {
@@ -322,6 +325,7 @@ img {
 
 .features-item:not(:last-child)::after {
   content: '';
+  display: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -350,7 +354,7 @@ img {
 /** =========== TASTE ============== */
 
 .taste {
-  padding-top: 120px;
+  padding-top: 80px;
 }
 .taste-title {
   max-width: 412px;
@@ -361,15 +365,19 @@ img {
 .taste-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px 32px;
+  gap: 20px;
   /* column-gap: 32px;
   row-gap: 24px; */
 }
 
 .taste-item {
   border-radius: 15px;
-  width: calc((100% - 32px * 3) / 4);
+  width: 100%;
   padding: 28px 23px;
+}
+
+.taste-item:not(:nth-child(-n + 4)) {
+  display: none;
 }
 
 .taste-item:nth-child(4n + 1) {
@@ -390,6 +398,7 @@ img {
 }
 
 .taste-img {
+  margin: 0 auto;
   margin-bottom: 36px;
 }
 .taste-subtitle {
@@ -405,7 +414,7 @@ img {
 /** =========== MADE ============== */
 
 .made {
-  padding-top: 120px;
+  padding-top: 80px;
 }
 .made-title {
   margin-bottom: 50px;
@@ -413,15 +422,18 @@ img {
 
 .made-wrap {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .made-img {
+  width: 100%;
 }
 
 .made-content {
   background-color: #ffffff;
-  padding: 32px;
+  /* padding: 32px; */
+  padding: 20px 14px;
 }
 
 .made-subtitle {
@@ -429,14 +441,16 @@ img {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
-  margin-bottom: 28px;
+  /* margin-bottom: 28px; */
+  margin-bottom: 20px;
 }
 
 .made-list {
 }
 
 .made-item {
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
+  margin-bottom: 18px;
   padding-left: 16px;
   position: relative;
 }
@@ -469,8 +483,9 @@ img {
 /** =========== PRODUCTS ============== */
 
 .products {
-  padding-top: 120px;
+  padding-top: 80px;
 }
+
 .products-title {
   margin-bottom: 50px;
 }
@@ -478,10 +493,11 @@ img {
 .products-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px 18px;
+  gap: 32px;
 }
+
 .products-item {
-  width: calc((100% - 18px * 3) / 4);
+  width: 100%;
   border: 1px solid rgba(17, 17, 17, 0.1);
   background: #fff;
   border-radius: 15px;
@@ -489,7 +505,7 @@ img {
   text-align: center;
 }
 .products-img {
-  margin-bottom: 8px;
+  margin: 0 auto 8px;
 }
 .product-subtitle {
   color: #111;
@@ -983,3 +999,129 @@ img {
 .modal-check:checked + .check-text::after {
   transform: translate(18px);
 } */
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 365px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 734px;
+  }
+
+  .made .container {
+    max-width: 644px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .features-list {
+    gap: 44px 88px;
+  }
+
+  .features-item {
+    width: calc((100% - 88px) / 2);
+    padding: 0;
+  }
+
+  .taste {
+    padding-top: 100px;
+  }
+
+  .taste-list {
+    gap: 32px;
+  }
+
+  .taste-item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .taste-item:not(:nth-child(-n + 4)) {
+    display: block;
+  }
+
+  .made {
+    padding-top: 100px;
+  }
+
+  .made-content {
+    padding: 32px;
+  }
+
+  .made-subtitle {
+    margin-bottom: 28px;
+  }
+
+  .products {
+    padding-top: 100px;
+  }
+
+  .products-item {
+    width: calc((100% - 32px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container,
+  .made .container {
+    max-width: 1166px;
+  }
+
+  .features-list {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .features-item {
+    width: calc((100% - 176px) / 3);
+  }
+
+  .features-item:not(:last-child)::after {
+    display: block;
+  }
+
+  .taste {
+    padding-top: 120px;
+  }
+
+  .taste-list {
+    gap: 24px 32px;
+  }
+
+  .taste-item {
+    width: calc((100% - 96px) / 4);
+  }
+
+  .made {
+    padding-top: 120px;
+  }
+
+  .made-wrap {
+    flex-wrap: nowrap;
+  }
+
+  .made-item {
+    margin-bottom: 24px;
+  }
+  .products {
+    padding-top: 120px;
+  }
+
+  .products-list {
+    gap: 24px 18px;
+  }
+
+  .products-item {
+    width: calc((100% - 54px) / 4);
+  }
+}
